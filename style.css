@@ -1,0 +1,52 @@
+body {
+    font: normal 20px sans-serif arial; 
+    background-image: linear-gradient(to bottom ,#ED7B0C ,#F75E0C ,#E04017 ,#F7190C);
+    background-attachment: fixed;
+   
+}
+.nav{
+    background-color: black;
+    padding-top: 0%;
+    
+    
+}
+.alingh1 {
+    text-align: center;
+    background-image: linear-gradient(to bottom ,#4D2504 ,#7A4206 ,#9C3708 ,#7A2C12);
+    background-attachment: fixed;
+}
+
+.alingh2 {
+    text-align: center; background-color: #7A1F00; font-family:'Times New Roman';
+}
+
+.alingh3 {
+    text-align:center; background-color:#7A1F00; font-family:'Times New Roman' 
+}
+
+.quem-somos {
+    background-color: ; text-align:left;
+    color:black; font-family: sans-serif; font-size: 20px;
+}
+
+.parceiros {
+    background-color: ; text-align: center;
+    color: black; font-family: sans-serif; font-size: 20px;
+
+
+}
+
+.serv {
+    background-color: ; text-align: center;
+    color: black; font-family: sans-serif; font-size: 20px;
+
+}
+
+.final {
+    text-align: center; font-family: sans-serif; font-size: initial;
+    background-color:
+    
+}
+.baner {
+    text-align-last: right;
+}
