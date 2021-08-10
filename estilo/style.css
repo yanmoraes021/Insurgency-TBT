@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: russa;
+    src: url('../fontes/Chernobyl.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: dysplay;
+    src: url('../fontes/display.ttf') format('TrueType');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #ED7B0C;
+    --cor1: rgb(247, 94, 12);
+    --cor3: rgb(224, 64, 23);
+    --cor4: rgb(194, 19, 10);
+    --cor5: rgb(102, 37, 15);
+    --cor6: #331705;
+    
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-russa: 'russa', 'cursive';
+    --fonte-display: 'dysplay', 'cursive';
+}
+
+body{
+    background-image: url('../img/BG-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--fonte-padrao);
+    font-size: fixed;
+}
+
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1) ,var(--cor3), var(--cor4), var(--cor5), var(--cor6));
+    margin: auto;
+    text-align: center;
+    padding-top: 2px;
+}
+header h2 {
+    font-family: var(--fonte-russa);
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
+}
+header p {
+    font-family: var(--fonte-display);
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+    margin-top: -20px;
+    
+}
+
+nav {
+    font-family: var(--fonte-display);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--cor6);
+    padding: 7px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.589);
+    
+}
+nav a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition-duration: 0.7s;
+    
+}
+
+
+nav > a:hover {
+    border-radius: 5px;
+    background-color: var(--cor0);
+    padding: 6px;
+    text-decoration: transparent;
+    color: var(--cor4);
+}
+h1 {
+    text-align: center;
+    margin: 20px 15px;
+}
+
+
+
+main {
+    font-family: var(--fonte-padrao);
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 12px;
+    margin-top: 18px;
+    border-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.733);
+    
+}
+main h1 {
+    
+    font-family: var(--fonte-russa);
+    background-image: linear-gradient( to top, var(--cor3), transparent);
+    padding: 15px 0px 0px 15px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin: -12px -12px;
+    
+}
+main h2 {
+    background-image: linear-gradient( to right, var(--cor6), transparent);
+    font-family: var(--fonte-russa);
+    color: var(--cor1);
+    margin: 10px;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-indent: 10px;
+    border-radius: 10px;
+}
+main h3 {
+    font-family: var(--fonte-display);
+    background-image: linear-gradient(to left, var(--cor6), transparent);
+    color: var(--cor1);
+    text-align: right;
+    border-radius: 5px;
+    padding-right: 80px;
+}
+main h4 {
+    font-family: var(--fonte-russa);
+    font-size: 20px;
+    background-color: var(--cor3);
+    text-align: center;
+    border-radius: 14px;
+    margin: 0px 300px;
+    padding: 8px 10px;
+    color: black;
+    
+    
+}
+main > h4 >a {
+    color: black;
+}
+
+main > h4:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+
+}
+    
+main p {
+    color: white;
+    margin: 15px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.4em;
+}
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor4);
+}
+main img {
+    margin: 3px 10px 30px 17px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding-right: 20px;
+}
+main strong {
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+main ul {
+    background-color: var(--cor3);
+    font-family: var(--fonte-display);
+    font-size: 18px;
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2622\00A0\00A0';
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5em;    
+}
+main > ul.lista {
+    color: black;
+    columns: 3;
+    font-size: 25px;
+    text-align: center;
+}
+main >ul.lista > li > a {
+    color: black;   
+}
+main >ul.lista > li:hover{
+    background-color: var(--cor4);
+    border-radius: 10px;
+}
+
+div.video {
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    margin: 0px -12px 0px -12px;
+    padding: 12px;
+    padding-bottom: 56.4%;
+
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* CSS aba Comunidade*/
+h3.left {
+    background-image: linear-gradient(to right, var(--cor6), transparent);
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+    padding-left: 90px;
+}
+p.right {
+    font-size: 18px;
+    text-align: right;
+    background-image: linear-gradient(to left, var(--cor6), transparent);
+    border-radius: 0px 0px 10px 10px;
+    margin: -6px 0px -6px 0px;
+    padding-top: 10px;
+}
+
+p.left {
+    font-size: 18px;
+    text-align: left;
+    background-image: linear-gradient(to right, var(--cor6), transparent);
+    border-radius: 0px 0px 0px 10px;
+    margin: -6px 0px 5px 0px;
+
+}
+
+p.banner {
+    text-align: center;
+}
+
+footer {
+    
+    text-align: center;
+    background-color: black;
+    background-attachment: fixed;
+    color: white;
+    font-size: 11px;
+    margin-top: 30px;
+
+    
+}
+footer a {
+    font-weight: bold;
+    color: var(--cor4);
+}
